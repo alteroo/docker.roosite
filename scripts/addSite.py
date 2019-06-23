@@ -12,13 +12,13 @@ from Products.CMFPlone.interfaces.controlpanel import ISiteSchema
 from zope.component import getUtility
 
 site_id = sys.argv[3]
-SITE_TITLE = u"CCRP"
+SITE_TITLE = u"Incrementic"
 
 #language = "en-jm"
 default_extension_profiles = (
     'plone.app.caching:default',
     'plonetheme.barceloneta:default',
-    'ccrp.site:default'
+    'incrementic.plonesite:default'
 )
 print("----------> Initiating install of {} site".format(site_id))
 

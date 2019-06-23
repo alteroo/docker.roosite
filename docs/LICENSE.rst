@@ -1,4 +1,4 @@
-ccrp.site Copyright 2018, Oshane Bailey
+incrementic.plonesite Copyright 2018, Incrementic
 
 This program is free software; you can redistribute it and/or
 modify it under the terms of the GNU General Public License version 2
