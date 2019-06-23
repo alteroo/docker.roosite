@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""Installer for the ccrp.site package."""
+"""Installer for the incrementic.plonesite package."""
 
 from setuptools import find_packages
 from setuptools import setup
@@ -13,52 +13,45 @@ long_description = '\n\n'.join([
 
 
 setup(
-    name='ccrp.site',
-    version='1.0.1',
-    description="The Caribbean Community of Retired Persons (CCRP) is a non-profit membership organization for persons 50 and over, retired or preparing for retirement.",
+    name='incrementic.plonesite',
+    version='1.0a1',
+    description="Incrementic Website",
     long_description=long_description,
     # Get more from https://pypi.python.org/pypi?%3Aaction=list_classifiers
     classifiers=[
         "Environment :: Web Environment",
         "Framework :: Plone",
-        "Framework :: Plone :: 5.1-pending",
+        "Framework :: Plone :: Addon",
+        "Framework :: Plone :: 5.1",
         "Programming Language :: Python",
         "Programming Language :: Python :: 2.7",
         "Operating System :: OS Independent",
         "License :: OSI Approved :: GNU General Public License v2 (GPLv2)",
     ],
     keywords='Python Plone',
-    author='Oshane Bailey',
-    author_email='b4.oshany@gmail.com',
-    url='https://pypi.python.org/pypi/ccrp.site',
+    author='David Bain',
+    author_email='david@alteroo.com',
+    url='https://github.com/collective/incrementic.plonesite',
+    project_urls={
+        'PyPI': 'https://pypi.python.org/pypi/incrementic.plonesite',
+        'Source': 'https://github.com/collective/incrementic.plonesite',
+        'Tracker': 'https://github.com/collective/incrementic.plonesite/issues',
+        # 'Documentation': 'https://incrementic.plonesite.readthedocs.io/en/latest/',
+    },
     license='GPL version 2',
     packages=find_packages('src', exclude=['ez_setup']),
-    namespace_packages=['ccrp'],
+    namespace_packages=['incrementic'],
     package_dir={'': 'src'},
     include_package_data=True,
     zip_safe=False,
+    python_requires="==2.7",
     install_requires=[
-        'plone.app.mosaic',
-        'collective.easyform',
-        'collective.collectionfilter',
-        'collective.documentviewer',
-        'collective.routes',
-        'collective.themesitesetup',
-        'collective.z3cform.norobots',
-        'gloss.theme',
-        'plone.api',
-        'plone.app.theming',
-        'plone.app.themingplugins',
-        'plone.restapi',
-        'Products.GenericSetup>=1.8.2',
-        'Products.PloneFormGen',
-        'Products.QuickImporter',
-        'rapido.plone',
         'setuptools',
-        'wildcard.media',
-        'webcouturier.dropdownmenu',
+        # -*- Extra requirements: -*-
         'z3c.jbot',
-
+        'plone.api>=1.8.4',
+        'plone.restapi',
+        'plone.app.dexterity',
     ],
     extras_require={
         'test': [
@@ -74,5 +67,7 @@ setup(
     entry_points="""
     [z3c.autoinclude.plugin]
     target = plone
+    [console_scripts]
+    update_locale = incrementic.plonesite.locales.update:update_locale
     """,
 )
