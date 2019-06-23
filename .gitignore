@@ -13,7 +13,7 @@ gitlab-init.sh
 sethttps.py
 
 temp_resources/
-resources/*
+resources/theme
 
 # ignore common virtualenv names
 venv
