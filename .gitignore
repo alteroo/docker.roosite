@@ -1,5 +1,4 @@
 #common tarball names
-src/
 content.tar.gz
 eggs.tar.gz
 .pem
@@ -43,7 +42,6 @@ include/
 lib/
 local/
 parts/
-#src/*
 content/
 test.roo_addon/
 var/
@@ -62,5 +60,4 @@ report.html
 !.gitignore
 !.gitkeep
 !.travis.yml
-#!src/ccrp
 !/scripts/
