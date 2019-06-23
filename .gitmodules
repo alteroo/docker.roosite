@@ -1,0 +1,3 @@
+[submodule "resources/theme/ccrp.theme"]
+	path = resources/theme/ccrp.theme
+	url = git@gitlab.com:alteroo/ccrp/ccrp.theme.git

@@ -1,0 +1,67 @@
+#common tarball names
+src/
+content.tar.gz
+eggs.tar.gz
+.pem
+buildout.cfg
+*UnifiedInstaller*
+# these are ignored
+# because there is no need to automate git setup a second time
+git-init.sh
+gitlab-init.sh
+
+#setup scripts, resources and virtualenvs
+sethttps.py
+
+temp_resources/
+resources/*
+
+# ignore common virtualenv names
+venv
+env
+
+# ignore zed and vim files and other ide files
+.zedstate
+.*.sw[op]
+.project
+.pydevproject
+.settings/
+
+.coverage
+*.egg-info
+*.log
+*.mo
+*.py?
+*.swp
+/*.zip
+# dirs
+bin/
+buildout-cache/
+develop-eggs/
+eggs/
+htmlcov/
+include/
+lib/
+local/
+parts/
+#src/*
+content/
+test.roo_addon/
+var/
+# files
+.installed.cfg
+.mr.developer.cfg
+lib64
+log.html
+output.xml
+pip-selfcheck.json
+report.html
+# excludes
+!.coveragerc
+!.editorconfig
+!.gitattributes
+!.gitignore
+!.gitkeep
+!.travis.yml
+#!src/ccrp
+!/scripts/
