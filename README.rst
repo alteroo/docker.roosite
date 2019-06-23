@@ -19,7 +19,7 @@ Running with Docker
 
 ::
 
-   docker  run -it -v $(pwd)/resources/theme:/plone/instance/resources/theme  -p 8080:8080  9ca6
+   docker  run -it -v $(pwd)/resources/theme:/plone/instance/resources/theme  -p 8080:8080 alteroo/roosite
 
 Place your theme in the resources/theme folder.
 
