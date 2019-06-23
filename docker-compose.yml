@@ -13,9 +13,9 @@ services:
       DNS_ENABLED: "True"
 
   plone:
-#    image: plone
+    image: alteroo/roosite
 #    image: registry.gitlab.com/alteroo/carimac.com.buildout:2017-11-17-1519
-    image: registry.gitlab.com/alteroo/carimac.com.buildout:2017-11-17-1627
+#    image: registry.gitlab.com/alteroo/carimac.com.buildout:2017-11-17-1627
     depends_on:
     - zeoserver
     environment:
@@ -23,10 +23,9 @@ services:
 
   zeoserver:
     image: plone
-    command: zeoserver
+    command: zeo
     volumes:
-    - /var/local/data/filestorage:/data/filestorage
-    - /var/local/data/blobstorage:/data/blobstorage
+    - data:/data
 
 volumes:
   data:
