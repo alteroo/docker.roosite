@@ -14,11 +14,14 @@ Features
 - Can be bullet points
 
 
-Examples
---------
+Running with Docker
+---------------------
 
-This add-on can be seen in action at the following sites:
-- Is there a page on the internet where everybody can see the features?
+::
+
+   docker  run -it -v $(pwd)/resources/theme:/plone/instance/resources/theme  -p 8080:8080  9ca6
+
+Place your theme in the resources/theme folder.
 
 
 Documentation
