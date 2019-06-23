@@ -8,7 +8,7 @@ COPY --chown=plone:plone . /plone/instance/src/$PACKAGENAME
 # add your dependent files here
 COPY docker.cfg buildout.cfg /plone/instance/
 COPY base.cfg requirements.txt constraints_plone51.txt /plone/instance/
-COPY pypi-local  /plone/instance/pypi-local
+#COPY pypi-local  /plone/instance/pypi-local
 
 # add resources that need to be writeable
 COPY --chown=plone:plone test_plone51.cfg /plone/instance

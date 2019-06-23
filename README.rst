@@ -23,6 +23,9 @@ Running with Docker
 
 Place your theme in the resources/theme folder.
 
+Deploying with docker machine
+------------------------------
+
 
 Documentation
 -------------
