@@ -3,7 +3,7 @@ services:
   haproxy:
     image: eeacms/haproxy
     ports:
-    - 8080:5000
+    - 13080:5000
     - 1936:1936
     depends_on:
     - plone
