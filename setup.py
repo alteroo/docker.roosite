@@ -58,6 +58,7 @@ setup(
         'plone.app.mosaic',
         'rapido.plone',
         'wildcard.media',
+        'webcouturier.dropdownmenu',
         'Products.GenericSetup>=1.8.2',
         'Products.PloneFormGen',
         'Products.QuickImporter',
